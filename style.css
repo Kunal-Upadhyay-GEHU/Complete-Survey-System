@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    background: #e0e0e0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    border-radius: 10px;
+    padding: 7px;
+}
+nav a:hover{
+    color: white;
+    background: rgba(0, 0, 255,.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input container */
+.input-container {
+    position: relative;
+    margin: 25px auto;
+  }
+  
+  /* Input field */
+  .input-field {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  /* Input label */
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input highlight */
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #007bff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input field:focus styles */
+  .input-field:focus + .input-label {
+    top: -20px;
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .input-field:focus + .input-label + .input-highlight {
+    width: 95%;
+  }
+  
+
+  .rad:focus {
+    outline: 0;
+    border-color: #2260ff;
+    box-shadow: 0 0 0 4px #b5c9fc;
+  }
+  
+  .mydict div {
+    display: flex;
+    flex-wrap: wrap;
+    margin : 20px;
+    justify-content: center;
+  }
+  
+  .mydict input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  
+  .mydict input[type="radio"]:checked + span {
+    box-shadow: 0 0 0 0.0625em #0043ed;
+    background-color: #dee7ff;
+    z-index: 1;
+    color: #0043ed;
+  }
+  
+  .rad span {
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.375em .75em;
+    position: relative;
+    margin-left: .0625em;
+    box-shadow: 0 0 0 0.0625em #b5bfd9;
+    letter-spacing: .05em;
+    color: #3e4963;
+    text-align: center;
+    transition: background-color .5s ease;
+  }
+  
+  .rad:first-child span {
+    border-radius: .375em 0 0 .375em;
+  }
+  
+  .rad:last-child span {
+    border-radius: 0 .375em .375em 0;
+  }
+  
+
+  .cssbuttons-io-button {
+    background: #a370f0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey System</title>
+</head>
+
+<script>
+    var subbmited=false;
+</script>
+<iframe src="" frameborder="0" name="hdcrm" id="hdcrm" style="display: none;" onload="if(subbmited){window.location='End.html';}"></iframe>
+
+<!---https://docs.google.com/forms/d/e/1FAIpQLSdPGO7uj4SnfHyXxKpA5VlY18wbANEokb9Zfzc8dGzu_Ijs6g/viewform
+    ?usp=pp_url&
+    entry.92927=a&
+    entry.703493349=1&
+    entry.716090033=Women&
+    entry.1495312290=abc-->
+
+<body>
+    <header>
+        <h1>Survey Form</h1>
+        <nav>
+            <a href="index.html">User Area</a>
+            <a href="Result.html">Admin Area</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form id="surveyForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdPGO7uj4SnfHyXxKpA5VlY18wbANEokb9Zfzc8dGzu_Ijs6g/formResponse"  method="post" target="hdcrm" onsubmit="subbmited=true">
+            <div class="input-container">
+                <input placeholder="Enter Name" class="input-field" type="text" name="entry.92927">
+                <label for="input-field" class="input-label">Name</label>
+                <span class="input-highlight"></span>
+            </div>
+              
+
+            <div class="input-container">
+                <input placeholder="Enter Age" class="input-field" type="number" name="entry.703493349">
+                <label for="input-field" class="input-label">Age</label>
+                <span class="input-highlight"></span>
+            </div>
+
+            <label>Gender:</label>
+            <div class="mydict">
+                <div>
+                    <label class="rad" for="men">
+                        <input type="radio" name="entry.716090033" value="Men" id="men">
+                        <span>Men</span>
+                    </label>
+                    <label class="rad" for="women">
+                        <input type="radio" name="entry.716090033" value="Women" id="women">
+                        <span>Women</span>
+                    </label>
+                    <label class="rad" for="others">
+                        <input type="radio" name="entry.716090033" value="others" id="others">
+                        <span>others</span>
+                    </label>
+                </div>
+            </div>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="entry.1495312290" required></textarea><br>
+
+            <button class="cssbuttons-io-button" type="submit">
+                Submit Your Response
+                <div class="icon">
+                  <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              
+        </form>
+    </div>
+</body>
+</html>
